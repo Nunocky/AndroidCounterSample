@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidCounterSample</string>
+    <string name="message">You have pushed the button this many times.</string>
+    <string name="increment">increment</string>
+</resources>
