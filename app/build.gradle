@@ -17,21 +17,21 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    signingConfigs {
-        release {
-            storeFile file("$rootDir/androidcountersample.keystore")
+    // signingConfigs {
+    //     release {
+    //         storeFile file("$rootDir/androidcountersample.keystore")
 
-            def props = new Properties()
-            def keystorePropertiesFile = file("$rootDir/androidcountersample.properties")
-            if (keystorePropertiesFile.exists()) {
-                props.load(new FileInputStream(keystorePropertiesFile))
-            }
+    //         def props = new Properties()
+    //         def keystorePropertiesFile = file("$rootDir/androidcountersample.properties")
+    //         if (keystorePropertiesFile.exists()) {
+    //             props.load(new FileInputStream(keystorePropertiesFile))
+    //         }
 
-            storePassword props.STORE_PASSWORD
-            keyAlias props.KEY_ALIAS
-            keyPassword props.KEY_PASSWORD
-        }
-    }
+    //         storePassword props.STORE_PASSWORD
+    //         keyAlias props.KEY_ALIAS
+    //         keyPassword props.KEY_PASSWORD
+    //     }
+    // }
 
     buildTypes {
         release {
